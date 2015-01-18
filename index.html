@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Number Shuffle Game</title>
+  <meta name="Author" content="Rahul Jujarey">
+  <meta name="keywords" lang="en-us" content="number, shuffle, game, app, rahul, jujarey, maths, puzzle">
+  <meta name="description" content="This is Number Shuffle Game where user have align reorder the random numbers serially to complete the game">
+  
+  <script src="scripts/main.js"></script>
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Number Shuffle Game</h1>
+    <div class="controlPanel">
+      <h2>Level</h2>
+      <ul class="levels">
+        <li onclick="Game.CreateGame(3)">Begineer</li>
+        <li onclick="Game.CreateGame(4)">Intermediate</li>
+        <li onclick="Game.CreateGame(5)">Advance</li>
+      </ul>
+      <h2>Instructions</h2>
+      <ul>
+        <li>Select Level to Start</li>
+        <li>Click on the numbers to move it to blank space</li>
+        <li>Order all the numbers to complete game</li>
+      </ul>
+      <h3>Time: <span id="gameTimer"></span></h3>
+    </div>
+    <div class="gamePanel">
+      <h2>Game</h2>
+      <table id="numberGrid"></table>
+    </div>
+    <div class="clear"></div>
+  </div>
+</body>
+
+</html>

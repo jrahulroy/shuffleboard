@@ -1,0 +1,51 @@
+body{
+  margin:0px;
+}
+.container{
+  width:800px;
+  margin:0 auto;
+  font-family:"Segoe UI";
+  font-size:15px;
+  background-color:#48D1CC;
+  padding:20px;
+}
+.clear{
+  clear:both;
+}
+h1{
+  text-align:center;
+}
+.controlPanel{
+  width:50%;
+  float:left;
+}
+.controlPanel ul.levels li{
+  display:inline-block;
+  list-style-type:none;
+  padding:10px 20px;
+  background-color:#FFA07A;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.gamePanel{
+  width:50%;
+  float:left;
+}
+table, td, th{
+  border: 1px solid black;
+}
+td{
+  width:30px;
+  height:30px;
+  vertical-align:middle;
+  text-align:center;
+  cursor:pointer;
+}
+
+
+@media (max-width: 570px){
+  .controlPanel, .gamePanel, .container{
+    width:100%;
+  }
+}
